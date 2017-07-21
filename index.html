@@ -1,0 +1,50 @@
+<html>
+<meta charset="utf-8">
+
+<body>
+  <div class="table">
+    <h2>Table</h2>
+    <div class="container">
+      <div class="column column-left">
+        <button id="add" class="button">+</button>
+      </div>
+      <div class="column">
+      </div>
+      <div class="column column-right">
+        <button id="remove" class="button">X</button>
+      </div>
+    </div>
+    <div id="table" class="container"></div>
+    <div class="container">
+      <div class="column column-left">
+        <button id="previous" class="button"><<</button>
+      </div>
+      <div class="column">
+        <div id="total" class="total"></div>
+      </div>
+      <div class="column column-right">
+        <button id="next" class="button">>></button>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="template/plain" id="table-data">
+  {{#each data}}
+  <div class='row'>
+    <div class='col index'>{{this.index}}</div>
+    <div class='col name'>{{this.name}}</div>
+  </div>
+  {{/each}}
+</script>
+<script type="template/plain" id="total-data">
+  {{data.page}} of {{data.totalPages}} pages | Total: {{data.total}}
+</script>
+<link rel="stylesheet" type="text/css" href="css/style.css" charset="utf-8" />
+<script type="text/javascript" src="js/handlebars-4.1.0.js"></script>
+<script type="text/javascript" src="js/storage.js"></script>
+<script type="text/javascript" src="js/render.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
+<script type="text/javascript" src="js/lipsum.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+
+</html>
