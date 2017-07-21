@@ -1,7 +1,12 @@
 # localStorage-Table
 
 Simple localstorage table
-link:
+
+Links:
+
 https://vinigomescunha.github.io/localStorage-Table/
+
 #tests simple
+
 https://vinigomescunha.github.io/localStorage-Table/test/
+
