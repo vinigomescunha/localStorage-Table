@@ -1,10 +1,12 @@
 var key = 'mock';
+ // storage standalone test
 var s = new Storage(key);
 var l = Lipsum;
 var u = QUnit;
 var tb = new Table({
     id: 'mock'
 });
+tb.key=key;
 u.test("Storage: key is same that defined...", function (assert) {
     assert.equal(s.key, key);
 });
