@@ -1,4 +1,4 @@
-var key = 'test';
+var key = 'mock';
 var s = new Storage(key);
 var l = Lipsum;
 var u = QUnit;
